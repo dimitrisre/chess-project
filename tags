@@ -1,0 +1,34 @@
+COL	defs.h	/^#define COL(x)			(x & 7)$/
+Mmain	main.c	/^int main()$/
+ROW	defs.h	/^#define ROW(x)			(x >> 3)$/
+attack	board.c	/^BOOL attack(int sq, int s)$/
+checkup	search.c	/^void checkup()$/
+eval	eval.c	/^int eval()$/
+eval_dark_king	eval.c	/^int eval_dark_king(int sq)$/
+eval_dark_pawn	eval.c	/^int eval_dark_pawn(int sq)$/
+eval_dkp	eval.c	/^int eval_dkp(int f)$/
+eval_light_king	eval.c	/^int eval_light_king(int sq)$/
+eval_light_pawn	eval.c	/^int eval_light_pawn(int sq)$/
+eval_lkp	eval.c	/^int eval_lkp(int f)$/
+gen	board.c	/^void gen()$/
+gen_caps	board.c	/^void gen_caps()$/
+gen_promote	board.c	/^void gen_promote(int from, int to, int bits)$/
+gen_push	board.c	/^void gen_push(int from, int to, int bits)$/
+get_ms	main.c	/^int get_ms()$/
+hash_rand	board.c	/^int hash_rand()$/
+in_check	board.c	/^BOOL in_check(int s)$/
+init_board	board.c	/^void init_board()$/
+init_hash	board.c	/^void init_hash()$/
+makemove	board.c	/^BOOL makemove(move_bytes m)$/
+move_str	main.c	/^char *move_str(move_bytes m)$/
+parse_move	main.c	/^int parse_move(char *s)$/
+print_board	main.c	/^void print_board()$/
+print_result	main.c	/^void print_result()$/
+quiesce	search.c	/^int quiesce(int alpha,int beta)$/
+reps	search.c	/^int reps()$/
+search	search.c	/^int search(int alpha, int beta, int depth)$/
+set_hash	board.c	/^void set_hash()$/
+sort	search.c	/^void sort(int from)$/
+sort_pv	search.c	/^void sort_pv()$/
+takeback	board.c	/^void takeback()$/
+think	search.c	/^void think(int output)$/
